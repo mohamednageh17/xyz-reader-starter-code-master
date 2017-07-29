@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-
+<set>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_enabled="true"
@@ -24,8 +24,16 @@
                 android:propertyName="translationZ"
                 android:valueTo="@dimen/fab_press_translation_z"
                 android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="elevation"
+                android:valueTo="12"
+                android:valueType="floatType" />
         </set>
+
     </item>
+
     <item>
         <set>
             <objectAnimator
@@ -33,6 +41,14 @@
                 android:propertyName="translationZ"
                 android:valueTo="0"
                 android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="elevation"
+                android:valueTo="6"
+                android:valueType="floatType" />
         </set>
     </item>
+
 </selector>
+</set>

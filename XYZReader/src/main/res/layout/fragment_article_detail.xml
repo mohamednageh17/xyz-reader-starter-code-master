@@ -19,7 +19,7 @@
             android:id="@+id/photo"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:scaleType="fitXY"/>
+            android:scaleType="centerCrop"/>
 
         <View
             android:layout_width="match_parent"
@@ -101,6 +101,7 @@
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:src="@drawable/ic_share"
-      />
+        android:stateListAnimator="@anim/fab_state_list_anim"
+        />
 
 </FrameLayout>
